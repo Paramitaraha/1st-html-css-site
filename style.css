@@ -70,6 +70,7 @@ section.primary, section.secondary {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .primary-text, .secondary-text{
@@ -113,12 +114,20 @@ section.primary, section.secondary {
      flex-direction: column;
  }
  .primary-image {
-     min-height: 50vh;
-     object-fit: cover;
+    height: 100%;
  }
+ .primary-image img {
+     height: 100%;
+ }
+ 
  .primary-text {
      min-height: 30vh;
      font-size: 2rem;
      font-weight: 200;
  }
+
+ 
+.secondary-image img {
+    height: 100%;
+}
 }
