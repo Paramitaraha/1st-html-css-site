@@ -32,7 +32,7 @@ nav ul{
 }
 .hero{
     min-height: 90vh;
-    background-image: url(/love-couple-3679320_1920.png);
+    background-image: url('/love-couple-3679320_1920.png');
     background-size: cover;
     background-position: center;
     color: green;
@@ -69,7 +69,7 @@ section.primary, section.secondary {
 .primary-image img {
     width: 100%;
     height: 100%;
-    object-fit: fit;
+    object-fit: cover;
 }
 
 .primary-text, .secondary-text{
@@ -91,4 +91,34 @@ section.primary, section.secondary {
 
 .secondary-image img {
     width: 100%;
+}
+
+@media(max-width:500px){
+ header {
+     min-height: 10vh;
+     
+ }
+ nav h1 {
+     font-size: 2.5rem;
+ }
+ nav ul {
+     flex-direction: column;
+     padding: 1rem;
+
+ }
+ nav ul {
+     font-size: 2rem;
+ }
+ section.primary, section.secondary {
+     flex-direction: column;
+ }
+ .primary-image {
+     min-height: 50vh;
+     object-fit: cover;
+ }
+ .primary-text {
+     min-height: 30vh;
+     font-size: 2rem;
+     font-weight: 200;
+ }
 }
